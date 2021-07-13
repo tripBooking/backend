@@ -6,7 +6,7 @@ const Cors = require('cors')
 const helmet = require('helmet')
 app.use(Cors())
 app.use(helmet())
-app.use(express.json())
+app.use(exress.json())
 
 app.listen(port, () => {
     console.log(`Welcome to Trip Booker\n---------------------\n|Now running on Port ${port}|`)
