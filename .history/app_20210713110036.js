@@ -42,13 +42,13 @@ app.listen(port, async () => {
         console.log(error)
     }
 
-    // try {
-    //     const customer = await stripe.customers.create()
-    //     if (customer) {
-    //         console.log('stripe connected')
-    //     }
-    // } catch (error) {
-    //     console.log(error)
+    try {
+        const customer = await stripe.customers.create()
+        if (customer) {
+            console.log('stripe connected')
+        }
+    } catch (error) {
+        console.log(error)
         
-    // }
+    }
 })
