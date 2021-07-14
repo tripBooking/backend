@@ -3,7 +3,7 @@ const User = require('./userModel')
 const UserSignUp = new mongoose.Schema({
     email: String,
     phone: String,
-    customerId:String
+    // customerId:String
 })
 
 const ToursSchema = new mongoose.Schema({

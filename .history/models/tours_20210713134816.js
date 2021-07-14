@@ -1,10 +1,8 @@
 const mongoose = require('mongoose');
 const User = require('./userModel')
-const UserSignUp = new mongoose.Schema({
-    email: String,
-    phone: String,
-    customerId:String
-})
+const child = new User({})
+
+
 
 const ToursSchema = new mongoose.Schema({
     title: String,
@@ -13,7 +11,7 @@ const ToursSchema = new mongoose.Schema({
     capacity: Number,
     going: {type:Number,default:0},
     open:Boolean,
-    attending: [UserSignUp],
+    attending: [ child ],
     location: String,
     stops: [String],
     active:Boolean,
